@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route :: get('/','StudentController@index')->name('index');
 
+Route :: get('/create','StudentController@create')->name('create');
 
-Route::get('/test', function () {
-    return view('test');  //define views
-});
+Route :: post('/store','StudentController@store')->name('store');

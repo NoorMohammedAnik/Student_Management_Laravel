@@ -4,9 +4,11 @@
 
 
     <meta charset="utf-8">
-    <title>Student Management Database</title>
+    <title>@yield('title','Student Management') </title>
 
     <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/parsley.css')}}">
+
 </head>
 
 <body>
@@ -49,5 +51,12 @@
 
 
 <script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.js')}}"></script>
+
+
+<script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/parsley.min.js')}}"></script>
+
+
+
 </body>
 </html>
